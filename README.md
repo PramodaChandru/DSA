@@ -1,2 +1,2 @@
 # DSA
-Data Structure an Algorithm Tutorial
+Data Structure and Algorithm Learing
