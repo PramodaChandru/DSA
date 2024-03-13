@@ -1,2 +1,2 @@
 # DSA
-Data Structure and Algorithm Learing
+Data Structure and Algorithm Learning
