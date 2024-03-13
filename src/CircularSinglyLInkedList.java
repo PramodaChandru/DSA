@@ -19,15 +19,15 @@ public class CircularSinglyLInkedList {
         length = 0;
     }
 
-    private int length() {
+    public int length() {
         return length;
     }
 
-    private boolean isEmpty() {
+    public boolean isEmpty() {
         return length == 0;
     }
 
-    private void createCLL() {
+    public void createCLL() {
         ListNode first = new ListNode(1);
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
@@ -41,7 +41,7 @@ public class CircularSinglyLInkedList {
         last = fourth;
     }
 
-    private void print() {
+    public void print() {
         if(last == null) {
             return;
         }
@@ -53,7 +53,7 @@ public class CircularSinglyLInkedList {
         System.out.println(first.data);
     }
 
-    private void insertFirst(int val) {
+    public void insertFirst(int val) {
         ListNode temp = new ListNode(val);
         if(last == null) {
             last = temp;
@@ -64,7 +64,7 @@ public class CircularSinglyLInkedList {
         length++;
     }
 
-    private void insertLast(int val) {
+    public void insertLast(int val) {
         ListNode temp = new ListNode(val);
         if(last == null) {
             last = temp;
@@ -77,7 +77,7 @@ public class CircularSinglyLInkedList {
         length++;
     }
 
-    private ListNode removeNode() {
+    public ListNode removeNode() {
         if(isEmpty()) {
             throw new NoSuchElementException();
         }
