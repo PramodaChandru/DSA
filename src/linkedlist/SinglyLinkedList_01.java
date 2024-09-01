@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class SinglyLinkedList_01 {
 
     private ListNode head;
@@ -103,7 +105,7 @@ public class SinglyLinkedList_01 {
     public static void main(String[] args) {
         SinglyLinkedList_01 sl = new SinglyLinkedList_01();
 
-//        sl.head = new ListNode(10);
+        sl.head = new ListNode(10);
 //        ListNode second = new ListNode(1);
 //        ListNode third = new ListNode(8);
 //        ListNode fourth = new ListNode(11);
@@ -113,26 +115,26 @@ public class SinglyLinkedList_01 {
 //        third.next = fourth;//10 --> 1 --> 8 --> 11 --> null
 
         sl.insertFirst(11);
-        sl.insertFirst(8);
-        sl.insertFirst(1);
-        sl.insertFirst(10);
-
+//        sl.insertFirst(8);
+//        sl.insertFirst(1);
+//        sl.insertFirst(10);
+//
         sl.display();
-
-        sl.insertEnd(15);
-        sl.display();
-
-        sl.insertAtPosition(20, 7);
-        sl.display();
-
-
-        sl.deleteFirstNode();
-        sl.display();
-        sl.insertFirst(10);
-
-        sl.deleteEndNode();
-        sl.display();
-        sl.insertEnd(10);
+//
+//        sl.insertEnd(15);
+//        sl.display();
+//
+//        sl.insertAtPosition(20, 7);
+//        sl.display();
+//
+//
+//        sl.deleteFirstNode();
+//        sl.display();
+//        sl.insertFirst(10);
+//
+//        sl.deleteEndNode();
+//        sl.display();
+//        sl.insertEnd(10);
 
     }
 
