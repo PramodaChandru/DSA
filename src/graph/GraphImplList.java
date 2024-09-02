@@ -1,6 +1,7 @@
 package graph;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class GraphImplList {
 
@@ -37,13 +38,40 @@ public class GraphImplList {
         return sb.toString();
     }
 
+    public void bfs(int s) {
+        boolean[] visited = new boolean[V];
+        Queue<Integer> q = new LinkedList<>();
+        visited[s] = true;
+        q.offer(s);
+        while(!q.isEmpty()) {
+            int u = q.poll();
+            System.out.println(u + " ");
+            for(int w : adj[u]) {
+                if(!visited[w]) {
+                    visited[w] = true;
+                    q.offer(w);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        GraphImplList graph = new GraphImplList(4);
+//        GraphImplList graph = new GraphImplList(4);
+//        graph.addEdges(0,1);
+//        graph.addEdges(1,2);
+//        graph.addEdges(2,3);
+//        graph.addEdges(3,0);
+
+        GraphImplList graph = new GraphImplList(5);
         graph.addEdges(0,1);
         graph.addEdges(1,2);
         graph.addEdges(2,3);
         graph.addEdges(3,0);
+        graph.addEdges(2,4);
+
 
         System.out.println(graph);
+
+        graph.bfs(0);
     }
 }
