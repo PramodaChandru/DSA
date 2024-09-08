@@ -50,6 +50,7 @@ public class GraphImplMat {
         graph.addEdges(1,2);
         graph.addEdges(2,3);
         graph.addEdges(3,0);
+        graph.addEdges(3,4);
 
         graph.printMatrix();
 
